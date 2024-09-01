@@ -1,0 +1,237 @@
+/* Estilo base para o corpo do documento */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+/* Estilo para o menu de navegação */
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+/* Estilo para os links de navegação */
+a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para o cabeçalho principal */
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+/* Estilo para o container principal */
+.container {
+    display: flex;
+    align-items: flex-start; 
+}
+
+/* Estilo para imagens dentro do container */
+.container img {
+    margin-left: 50px;
+    margin-right: 50px; 
+    max-width: 600px; 
+    height: auto; 
+}
+
+/* Estilo para seções dentro do container */
+.container section {
+    flex: 1; 
+    margin-top: 100px;
+    margin-right: 300px;
+}
+
+/* Estilo para o container1 */
+.container1 {
+    display: flex;
+    margin-left: 200px;
+    gap: 50px;
+}
+
+/* Estilo para imagens dentro do container1 */
+.container1 img {
+    margin-top: 0;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Estilo para divs dentro do container1 */
+.container1 div {
+    background-color: rgba(59, 59, 59, 0.527);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px white solid;
+    margin-top: 100px;
+    margin-right: 100px;
+    height: 200px;
+    width: 400px;
+}
+
+/* Estilo para links dentro do container1 ao passar o mouse */
+.container1 a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Estilo para o container2 */
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+/* Estilo para imagens dentro do container2 */
+.container2 img {
+    margin: 40px;
+    padding: 0;
+    max-width: 350px; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+/* Estilo para divs dentro do container2 */
+.container2 div {
+    border: 1px white solid;
+    background-color: rgba(59, 59, 59, 0.527);
+    border-radius: 5px;
+    margin: 15px;
+    height: fit-content;
+}
+
+/* Estilo adicional para o container2 */
+.container2 {
+    text-align: center;
+}
+
+/* Estilo para links dentro do container2 ao passar o mouse */
+.container2 a:hover {
+    transition: 1s;
+    transform: scale(1.15);
+    z-index: 2;
+}
+
+/* Estilo para links de navegação ao passar o mouse */
+nav a:hover {
+    background-color: rgba(117, 115, 115, 0.534);
+    transform: scale(1.05);
+}
+
+/* Estilo para o formulário */
+form {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo para campos e áreas de texto no formulário */
+form input, form textarea {
+    width: 100%;
+    background-color: rgba(59, 59, 59, 0.705);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Estilo para os placeholders dos campos do formulário */
+form input::placeholder, form textarea::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+/* Estilo para o botão do formulário */
+form button {
+    width: 106%;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Estilo para a interface do formulário */
+.interface {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para o título do formulário */
+.interface h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Estilo para a área de texto no formulário */
+form textarea {
+    resize: none;
+}
+
+/* Estilos responsivos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    .container, .container1, .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container section {
+        padding: 15px;
+        margin: 15px;
+        align-items: center;
+    }
+
+    .container1 div {
+        padding: 20px;
+        margin: 0;
+        max-width: 85vw;
+    }
+
+    .container2 div {
+        width: 90vw;
+    }
+
+    .container2 img {
+        max-width: 70vw; 
+        margin: 0;
+    }
+
+    .container1 {
+        margin: 0;
+    }
+
+    .wrapper {
+        align-items: center;
+        margin: 15px;
+    }
+
+    form input, form textarea {
+        width: 95%;
+        padding-right: 5px;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
